@@ -1,0 +1,12 @@
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: eureka7001.com #eureka����˵�ʵ������(����ʹ������������ӳ�䣬�޸�hosts�ļ�����ʵ��)
+  client:
+    register-with-eureka: false     #false��ʾ����ע������ע���Լ���
+    fetch-registry: false     #false��ʾ�Լ��˾���ע�����ģ��ҵ�ְ�����ά������ʵ����������Ҫȥ��������
+    service-url:
+      # ����serviceע�ᵽ��Ⱥeureka�У���Ȼ�ᱨ��
+      defaultZone: http://eureka7001.com:7001/eureka/

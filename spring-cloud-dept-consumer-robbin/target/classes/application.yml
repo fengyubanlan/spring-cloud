@@ -1,0 +1,14 @@
+server:
+  port: 8002
+
+eureka:
+  client: #�ͻ���ע���eureka�����б���
+    register-with-eureka: false  # ��ǰ΢����ע�ᵽeureka��(���Ѷ�)
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      # ����serviceע�ᵽ��Ⱥeureka��
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+spring:
+  application:
+    name: DEPT-CONSUMER-ROBBIN

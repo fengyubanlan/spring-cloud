@@ -1,0 +1,3 @@
+org\jack\springcloud\feign\DeptRemote.class
+org\jack\springcloud\controller\DeptConsumerFeignController.class
+org\jack\springcloud\DeptConsumerFeignApp.class

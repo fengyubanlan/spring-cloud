@@ -1,0 +1,5 @@
+org\jack\springcloud\dao\DeptDao.class
+org\jack\springcloud\controller\DeptControllerProvider.class
+org\jack\springcloud\DeptProviderApp.class
+org\jack\springcloud\service\DeptService.class
+org\jack\springcloud\bo\DeptBo.class

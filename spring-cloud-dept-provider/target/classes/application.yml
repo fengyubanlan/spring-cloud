@@ -1,0 +1,29 @@
+server:
+  port: 8001
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.jack.springcloud.entity    # ����Entity���������ڰ�
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml                       # mapperӳ���ļ�
+
+spring:
+  application:
+    name: DEPT-PROVIDER # Ӧ������,���÷���ʱ���õ�
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver             # mysql������
+    url: jdbc:mysql://localhost:3306/cloudDB01?useSSL=false&useUnicode=true
+      &characterEncoding=utf8&serverTimezone=UTC            # ���ݿ�����
+    username: root
+    password: fengyubanlan
+
+eureka:
+  client: #�ͻ���ע���eureka�����б���
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      # ����serviceע�ᵽ��Ⱥeureka��
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: spring-cloud-dept-provider   # ��eureka����ʾ��Ӧ�ķ�������
+    prefer-ip-address: true     #��eureka���±ߵķ���·��������ʾIP��ַ

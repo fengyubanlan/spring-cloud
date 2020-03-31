@@ -1,0 +1,14 @@
+server:
+  port: 8002
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    register-with-eureka: false  # 当前微服务不注册到eureka中(消费端)
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      # 将该service注册到集群eureka中
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+spring:
+  application:
+    name: DEPT-CONSUMER-ROBBIN

@@ -1,0 +1,3 @@
+org\jack\springcloud\config\ConfigBean.class
+org\jack\springcloud\DeptConsumerRobbinApp.class
+org\jack\springcloud\controller\DeptConsumerRobbinController.class

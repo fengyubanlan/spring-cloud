@@ -1,0 +1,29 @@
+server:
+  port: 8001
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.jack.springcloud.entity    # 所有Entity别名类所在包
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+
+spring:
+  application:
+    name: DEPT-PROVIDER # 应用名称,调用服务时会用到
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
+    url: jdbc:mysql://localhost:3306/cloudDB01?useSSL=false&useUnicode=true
+      &characterEncoding=utf8&serverTimezone=UTC            # 数据库名称
+    username: root
+    password: fengyubanlan
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      # 将该service注册到集群eureka中
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: spring-cloud-dept-provider   # 在eureka中显示对应的服务名字
+    prefer-ip-address: true     #在eureka中下边的访问路径可以显示IP地址
