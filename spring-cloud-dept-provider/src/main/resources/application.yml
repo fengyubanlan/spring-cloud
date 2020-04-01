@@ -8,6 +8,7 @@ mybatis:
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
+
 spring:
   application:
     name: DEPT-PROVIDER # 应用名称,调用服务时会用到
@@ -27,3 +28,4 @@ eureka:
   instance:
     instance-id: spring-cloud-dept-provider   # 在eureka中显示对应的服务名字
     prefer-ip-address: true     #在eureka中下边的访问路径可以显示IP地址
+

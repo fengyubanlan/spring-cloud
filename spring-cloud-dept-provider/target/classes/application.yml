@@ -8,6 +8,7 @@ mybatis:
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml                       # mapperӳ���ļ�
 
+
 spring:
   application:
     name: DEPT-PROVIDER # Ӧ������,���÷���ʱ���õ�
@@ -27,3 +28,4 @@ eureka:
   instance:
     instance-id: spring-cloud-dept-provider   # ��eureka����ʾ��Ӧ�ķ�������
     prefer-ip-address: true     #��eureka���±ߵķ���·��������ʾIP��ַ
+
